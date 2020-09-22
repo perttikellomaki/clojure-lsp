@@ -369,6 +369,10 @@ In order to make the jumping into dependency jars work you have to have a `confi
 
 In `lsp-mode` `lsp-clojure-server-command` variable is available to override the command to start the `clojure-lsp` server, might be necessary to do this on a Windows environment.
 
+If you get strange errors when entering `lsp-mode`, you may need to install package dependencies manually.
+E.g. Emacs 28.0 complained about illegal byte code when dependencies were not automatically installed.
+For dependencies see Package-Requires at https://github.com/emacs-lsp/lsp-mode/blob/master/lsp-mode.el
+
 
 ### Oni
 Seems to work reasonably well but couldn't get rename to work reliably https://github.com/onivim/oni
